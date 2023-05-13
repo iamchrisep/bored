@@ -2,6 +2,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './globals.css';
 import {Sen} from 'next/font/google';
 import Image from 'next/image';
+import logo from '@/public/logo.png'
 
 const sen = Sen({subsets: ['latin'], weight: ['400', '700', '800']});
 
@@ -20,7 +21,7 @@ export default function RootLayout({children}) {
                         className="flex items-center"
                     >
                         <Image
-                            src="/logo.png"
+                            src={logo}
                             alt="Logo"
                             width={256}
                             height={96}
