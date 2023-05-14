@@ -1,6 +1,6 @@
 ## Demo
 
-### View it here -> [I'm bored!](https://iamchrisep.github.io/bored).
+### View it here -> [I'm bored!](https://iamchrisep.github.io/bored)
 
 Check out [My personal page](https://iamchrisep.github.io) for more information about me, my experience and my portfolio.
 
