@@ -1,14 +1,15 @@
 import React from 'react';
+import {prices} from '@/constants';
 
 const Activity = ({activity}) => {
     const priceName = (value) => {
         switch (true) {
-            case (value < 0.4):
-                return <span className="font-bold">cheap</span>;
-            case (value < 0.6):
-                return <span className="font-bold">average</span>;
-            case (value <= 1):
-                return <span className="font-bold">expensive</span>;
+            case (value <= prices[1].factor):
+                return <span className="font-bold">{prices[1].name}</span>;
+            case (value <= prices[2].factor):
+                return <span className="font-bold">{prices[2].name}</span>;
+            case (value <= prices[3].factor):
+                return <span className="font-bold">{prices[3].name}</span>;
             default:
                 return <i className="bi bi-infinity" />;
 

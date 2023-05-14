@@ -13,13 +13,13 @@
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
     50% {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 
@@ -32,24 +32,24 @@
 body {
     color: rgb(var(--foreground));
     background-image: linear-gradient(
-        45deg,
-        #fecaca,
-        #fed7aa,
-        #fde68a,
-        #fef08a,
-        #d9f99d,
-        #bbf7d0,
-        #a7f3d0,
-        #99f6e4,
-        #a5f3fc,
-        #bae6fd,
-        #bfdbfe,
-        #c7d2fe,
-        #ddd6fe,
-        #e9d5ff,
-        #f5d0fe,
-        #fbcfe8,
-        #fecdd3
+            45deg,
+            #fecaca,
+            #fed7aa,
+            #fde68a,
+            #fef08a,
+            #d9f99d,
+            #bbf7d0,
+            #a7f3d0,
+            #99f6e4,
+            #a5f3fc,
+            #bae6fd,
+            #bfdbfe,
+            #c7d2fe,
+            #ddd6fe,
+            #e9d5ff,
+            #f5d0fe,
+            #fbcfe8,
+            #fecdd3
     );
     background-size: 400% 400%;
     background-position: center;
@@ -70,7 +70,7 @@ body {
         border-radius: var(--border-radius);
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         white-space: nowrap;
         transition: transform .5s ease-in-out;
         z-index: 1;
@@ -123,10 +123,5 @@ body {
         border-radius: var(--border-radius);
         background: var(--background);
         z-index: 0;
-    }
-
-    .submit span {
-        position: relative;
-        z-index: 1;
     }
 }
